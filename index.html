@@ -8,8 +8,15 @@
 <body>
   <h1>hello world</h1>
   <p>hello world</p>
+
+  <button id="alert-button">Trykk på meg</button>
       <script>
     console.log('hello world');
+    const alertButton = document.getElementById('alert-button');
+
+    alertButton.addEventListener('click', () => {
+      alert('Hello world');
+    });
       </script>
   
 </body>
